@@ -31,7 +31,7 @@ public class WheelSlipController : MonoBehaviour
             sidewaysSlip = _info.sidewaysSlip;
             rpm = _wheel.rpm;
 
-            if (Mathf.Abs(sidewaysSlip) >= sidewaysSlipBound && Mathf.Abs(forwardSlip) >= forwardSlipBound)
+            if (Mathf.Abs(sidewaysSlip) >= sidewaysSlipBound || Mathf.Abs(forwardSlip) >= forwardSlipBound)
             {
                 Instantiate(smokePref, _info.point, Quaternion.LookRotation(_info.normal));
             }
