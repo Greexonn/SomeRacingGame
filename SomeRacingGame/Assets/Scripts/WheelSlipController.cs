@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class WheelSlipController : MonoBehaviour
 {
-    public float forwardSlip;
+    [SerializeField]
+    private float rpm;
+    [SerializeField]
+    private float sidewaysSlip;
+    public float sidewaysSlipBound;
+    [SerializeField]
+    private float forwardSlip;
     public float forwardSlipBound;
 
     public GameObject smokePref;
@@ -22,8 +28,10 @@ public class WheelSlipController : MonoBehaviour
         if (_wheel.GetGroundHit(out _info))
         {
             forwardSlip = _info.forwardSlip;
+            sidewaysSlip = _info.sidewaysSlip;
+            rpm = _wheel.rpm;
 
-            if (Mathf.Abs(forwardSlip) >= forwardSlipBound)
+            if (Mathf.Abs(sidewaysSlip) >= sidewaysSlipBound && Mathf.Abs(forwardSlip) >= forwardSlipBound)
             {
                 Instantiate(smokePref, _info.point, Quaternion.LookRotation(_info.normal));
             }

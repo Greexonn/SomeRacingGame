@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699492e1e8f577c42b5a24c5f62d7ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sidewaysSlip: 0
+  sidewaysSlipBound: 0.2
   forwardSlip: 0
   forwardSlipBound: 0.95
   smokePref: {fileID: 8251021654385949464, guid: 33f6d534171c1b243af65eed6abda13a,
@@ -230,6 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699492e1e8f577c42b5a24c5f62d7ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sidewaysSlip: 0
+  sidewaysSlipBound: 0.2
   forwardSlip: 0
   forwardSlipBound: 0.95
   smokePref: {fileID: 8251021654385949464, guid: 33f6d534171c1b243af65eed6abda13a,
@@ -353,6 +357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699492e1e8f577c42b5a24c5f62d7ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sidewaysSlip: 0
+  sidewaysSlipBound: 0.2
   forwardSlip: 0
   forwardSlipBound: 0.95
   smokePref: {fileID: 8251021654385949464, guid: 33f6d534171c1b243af65eed6abda13a,
@@ -755,6 +761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699492e1e8f577c42b5a24c5f62d7ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sidewaysSlip: 0
+  sidewaysSlipBound: 0.2
   forwardSlip: 0
   forwardSlipBound: 0.95
   smokePref: {fileID: 8251021654385949464, guid: 33f6d534171c1b243af65eed6abda13a,
